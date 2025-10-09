@@ -4,14 +4,15 @@ const composer = new Composer();
 
 composer.start(async (ctx) => {
     const buttons = Markup.inlineKeyboard([
-        [Markup.button.url('Go To Jobs', 'https://t.me/GreatsJobsBot/GreatsJobs')],
-        [Markup.button.url('Community', 'https://t.me/@whsxg0')],
+        [
+            [Markup.button.url('Go App', 'https://t.me/HateCapsBot/Hatecaps')],
+            [Markup.button.url('Channel', 'https://t.me/@whsxg0')],
+        ]
     ]);
 
     return ctx.reply(
-        Looking for employees or a job in @GreatsJobsBot,
-        { parse_mode: 'HTML', reply_markup: buttons.reply_markup } // Доступ к reply_markup через свойство объекта
+        Hi friend, here you can take part in the NFT Hate Caps draw, which will be in great demand for their uniqueness,
+        { parse_mode: 'HTML', ...buttons }
     );
 });
-
 module.exports = composer;
