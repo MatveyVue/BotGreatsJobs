@@ -5,7 +5,7 @@ const composer = new Composer();
 composer.start(async (ctx) => {
     const buttons = Markup.inlineKeyboard([
         [Markup.button.url('Go To Jobs', 'https://t.me/GreatsJobsBot/GreatsJobs')],
-        [Markup.button.url('Community', 'https://t.me/@whsxg0')],
+        [Markup.button.url('Community', 'https://t.me/hategroups')],
     ]);
 
     return ctx.reply(
